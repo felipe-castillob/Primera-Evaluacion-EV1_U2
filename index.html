@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EV1_U2</title>
+    <title>formulario_felipe_castillo_&&_benjamin_gonzalez</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -30,6 +30,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">TNS en Informatica y Aplicaciones Tecnologicas</a></li>
+                  <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">TNS en Sistemas embebidos</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">TNS en Telecomunicaciones</a></li>
@@ -47,16 +48,18 @@
         </div>
       </nav>
 
-      <div>
-          <img src="./assets/img/portada.jpeg" class="" alt="portada cft" width="100%" height="300px">
+      <div class="text-center">
+        <figure class="">
+          <img src="./assets/img/portada.jpeg" class="" alt="..." width="100%" height=300>
+          <figcaption class="" >Si tienes dudas. Usa nuestro formulario de contacto para realizar las preguntas que necesitas. Recuerda que estamos para ayudarte y ofrecerte una educacion de calidad.</figcaption>
+        </figure>
       </div>
 
-      <div class="container">
-        <p class="">formulario de ayuda...</p>
-      </div>
+      <br>
 
       <div class="container">
         <div class="row">
+          <div class="col-md-6 mx-auto">
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
@@ -64,31 +67,31 @@
                         <form class="requires-validation" novalidate>
 
                             <div class="col-md-12">
-                               <input class="form-control" type="text" name="name" placeholder="Nombre" required>
+                               <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                                <div class="valid-feedback">El Nombre es valido</div>
                                <div class="invalid-feedback">El Nombre es invalido</div>
                             </div>
                             <br>
                             <div class="col-md-12">
-                                <input class="form-control" type="text" name="name" placeholder="Apellido" required>
+                                <input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellido" required>
                                 <div class="valid-feedback">El Apellido es valido</div>
                                 <div class="invalid-feedback">El Apellido es invalido</div>
                             </div>
                             <br>
                             <div class="col-md-12">
-                                <input class="form-control" type="email" name="email" placeholder="Teléfono" required>
+                                <input class="form-control" type="text" name="telefono" id="telefono" placeholder="Teléfono" required>
                                  <div class="valid-feedback">El Telefono es valido</div>
                                  <div class="invalid-feedback">El Telefono es invalido</div>
                             </div>
                             <br>
                             <div class="col-md-12">
-                              <input class="form-control" type="email" name="email" placeholder="Carrera" required>
+                              <input class="form-control" type="text" name="carrera" id="carrera" placeholder="Carrera" required>
                                <div class="valid-feedback">La Carrera es valida</div>
                                <div class="invalid-feedback">La Carrera es invalida</div>
                             </div>
                             <br>
                             <div class="col-md-12">
-                              <input class="form-control" type="email" name="email" placeholder="Edad" required>
+                              <input class="form-control" type="text" name="edad" id="edad" placeholder="Edad" required>
                               <div class="valid-feedback">La Edad es valida</div>
                               <div class="invalid-feedback">La Edad es invalida</div>
                             </div>
@@ -98,13 +101,14 @@
                               <label for="floatingTextarea">Mensaje</label>
                              </div>
                             <br>
-                            <div class="form-button mt-3">
-                              <button id="submit" type="submit" class="btn btn-primary">Enviar</button>
+                            <div class="col-md-12">
+                              <button id="submit" type="submit" class="btn btn-primary form-control">Enviar</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
+          </div>
         </div>
     </div>
 
