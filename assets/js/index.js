@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       let isValid = true;
 
-      if (!/^[a-zA-Z\s]+$/.test(nombre)) {
+      if (!/^[a-zA-Z\s]+$/.test(nombre)) { //Invalida el campo si es distinto a a-zA-Z
           isValid = false;
           setInvalidField('nombre');
           //alert('El Nombre es invalido.');
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
           setValidField('nombre');
       }
 
-      if (!/^[a-zA-Z\s]+$/.test(apellido)) {
+      if (!/^[a-zA-Z\s]+$/.test(apellido)) { //Invalida el campo si es distinto a a-zA-Z
           isValid = false;
           setInvalidField('apellido');
           //alert('El Apellido es invalido.');
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
           setValidField('apellido');
       }
 
-      if (isNaN(telefono) || telefono < 222222222 || telefono > 999999999) {
+      if (isNaN(telefono) || telefono < 222222222 || telefono > 999999999) { //Invalida el campo si no es un numero o si es menor a 22... o mayor a 99...
           isValid = false;
           setInvalidField('telefono');
           //alert('El Telefono es invalido.');
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setValidField('telefono');
       }
 
-      if (!/^[a-zA-Z\s]+$/.test(carrera)) {
+      if (!/^[a-zA-Z\s]+$/.test(carrera)) { //Invalida el campo si es distinto a a-zA-Z
           isValid = false;
           setInvalidField('carrera');
           //alert('La Carrera es invalida.');
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
         setValidField('carrera');
       }
 
-      if (isNaN(edad) || edad < 17 || edad > 60) {
+      if (isNaN(edad) || edad < 17 || edad > 60) { //Invalida el campo si no es un numero o es menor a 17 o mayor a 60
           isValid = false;
           setInvalidField('edad');
           //alert('La Edad es invalida.');
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
           setValidField('edad');
       }
 
-      if (mensaje.trim() === '' || /^\d+$/.test(mensaje)) {
+      if (mensaje.trim() === '' || /^\d+$/.test(mensaje)) { //Invalida el campo si el campo se encuentra vacio o no contiene ningun caracter de a-zA-Z o numero
           isValid = false;
           setInvalidField('floatingTextarea');
           //alert('El Mensaje es invalido.');
@@ -74,13 +74,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-function setValidField(fieldName) {
+function setValidField(fieldName) { //Funcion que establece el campo como valido junto a un mensaje en el "valid-feedback"
   const field = document.getElementById(fieldName);
   field.classList.remove('is-invalid');
   field.classList.add('is-valid');
 }
 
-function setInvalidField(fieldName) {
+function setInvalidField(fieldName) { //Funcion que establece el campo como invalido junto a un mensaje en el "invalid-feedback"
   const field = document.getElementById(fieldName);
   field.classList.remove('is-valid');
   field.classList.add('is-invalid');
